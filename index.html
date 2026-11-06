@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d1b">
+  <meta name="description" content="A little digital celebration of light, colour and new beginnings. Happy Diwali!">
+  <title>Light Up the Night — Happy Diwali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="sky" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Light Up the Night home"><span class="brand-mark">✦</span> little light club</a>
+    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false"><span class="sound-dot"></span><span id="soundLabel">Sound off</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span></span> A FESTIVAL OF LIGHTS <span></span></div>
+      <p class="kicker">A little more light. A little more joy.</p>
+      <h1>Let the night<br><em>glow.</em></h1>
+      <p class="intro">Here’s to brighter beginnings, warm homes, loud laughter<br class="desktop-only"> and all the little things that make life shine.</p>
+      <div class="hero-actions">
+        <button class="button button-primary" id="celebrateBtn" type="button">Celebrate the night <span>↗</span></button>
+        <button class="button button-quiet" id="scrollBtn" type="button">Explore the glow <span>↓</span></button>
+      </div>
+      <div class="hero-art" aria-label="Illustration of a glowing diya">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="spark spark-a">✦</div><div class="spark spark-b">✧</div><div class="spark spark-c">✦</div>
+        <div class="flame"><i></i></div>
+        <div class="diya"><div class="diya-shine"></div></div>
+        <div class="diya-shadow"></div>
+      </div>
+      <div class="scroll-note"><span class="scroll-line"></span> SCROLL INTO THE CELEBRATION</div>
+    </section>
+
+    <section class="moments section-wrap" id="moments">
+      <div class="section-heading">
+        <p class="section-tag">THE GOOD STUFF</p>
+        <h2>Make a little<br><em>magic.</em></h2>
+        <p>Not a perfect festival. Just a beautiful one, made of moments.</p>
+      </div>
+      <div class="moment-grid">
+        <article class="moment-card card-spark">
+          <div class="card-visual fireworks-art"><span>✦</span><span>✧</span><span>✦</span><span>·</span></div>
+          <div class="card-copy"><span class="card-index">01 / THE NIGHT</span><h3>Chase the sparkle.</h3><p>Tap the sky and make your own little burst of colour.</p><button class="text-button" id="fireworkHint" type="button">Make it sparkle <span>↗</span></button></div>
+        </article>
+        <article class="moment-card card-warm">
+          <div class="card-visual rangoli-art"><div class="rangoli"><i></i><i></i><i></i><i></i><b>✦</b></div></div>
+          <div class="card-copy"><span class="card-index">02 / THE DETAILS</span><h3>Colour outside lines.</h3><p>A little colour, a little creativity, a lot of festive energy.</p><span class="tiny-note">MADE OF JOY & COLOUR</span></div>
+        </article>
+        <article class="moment-card card-calm">
+          <div class="card-visual diya-art"><div class="mini-flame"></div><div class="mini-diya"></div><span class="glow-ring"></span></div>
+          <div class="card-copy"><span class="card-index">03 / THE FEELING</span><h3>Keep the light close.</h3><p>May your space feel warm and your next chapter feel bright.</p><button class="text-button" id="lightBtn" type="button">Light a diya <span>↗</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="wish-section">
+      <div class="wish-orb">✦</div>
+      <p class="section-tag">A WISH, FROM US TO YOU</p>
+      <h2>May your days be<br><em>golden.</em></h2>
+      <p class="wish-copy">May good things find you. May kind people stay.<br>And may there always be a reason to celebrate.</p>
+      <div class="wish-actions">
+        <button class="button button-primary" id="shareBtn" type="button">Share the good vibes <span>↗</span></button>
+        <span class="share-status" id="shareStatus" aria-live="polite"></span>
+      </div>
+      <div class="wish-signoff">HAPPY DIWALI <span>✦</span> WITH LIGHT</div>
+    </section>
+  </main>
+
+  <footer><span>little light club</span><span>Made for brighter moments <b>✦</b></span><a href="#top" id="backTop">BACK TO TOP ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
